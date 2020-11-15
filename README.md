@@ -1,6 +1,6 @@
 # ML-Compilation
 
-Having started my Machine Learning Journey, I have come across implementations of common ML algorithms across various books/ online. 
+Having started my Machine Learning Journey, I have come across implementations of ML algorithms across various books/ online. 
 This repository aims to collect them here and at the same time convert to Python3(incase older code) and document any changes made.
 
 Current sources: 
