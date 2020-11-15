@@ -25,7 +25,7 @@ def classify0(inX, dataSet, labels, k):
 def file2matrix(filename):
     fr = open(filename)
     numerOfLines = len(fr.readlines())
-    returnMat = zeros((numberOfLines, 3))
+    returnMat = np.zeros((numerOfLines, 3))
     classLabelVector = []
     fr = open(filename)
     index = 0
@@ -41,10 +41,10 @@ def autoNorm(dataSet):
     minVals = dataSet.min(0)
     maxVals = dataSet.max(0)
     ranges = maxVals - minVals
-    normDataSet = np.zeros(shape(dataSet))
+    normDataSet = np.zeros(np.shape(dataSet))
 
     m = dataSet.shape[0]
-    normDataSet = dataSet = tile(minVals, (m,1))
-    normDataSet = normDataSet/tile(ranges, (m,1))
+    normDataSet = dataSet = np.tile(minVals, (m,1))
+    normDataSet = normDataSet/np.tile(ranges, (m,1))
 
     return normDataSet, ranges, minVals
